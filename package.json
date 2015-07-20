@@ -1,0 +1,20 @@
+{
+  "name": "atom-pastebin",
+  "author": "Jack Lewis <rhinoceraptor@gmail.com>",
+  "main": "./lib/atom-pastebin",
+  "version": "0.0.0",
+  "description": "Instantly upload a source file to your Pastebin account",
+  "keywords": [
+    "pastebin"
+  ],
+  "activationCommands": {
+    "atom-workspace": "atom-pastebin:toggle"
+  },
+  "repository": "https://github.com/rhinoceraptor/atom-pastebin",
+  "license": "MIT",
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  },
+  "dependencies": {
+  }
+}

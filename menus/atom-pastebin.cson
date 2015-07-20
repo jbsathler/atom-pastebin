@@ -1,0 +1,22 @@
+# See https://atom.io/docs/latest/hacking-atom-package-word-count#menus for more details
+'context-menu':
+  'atom-text-editor': [
+    {
+      'label': 'Upload file to Pastebin'
+      'command': 'atom-pastebin:upload'
+    }
+  ]
+'menu': [
+  {
+    'label': 'Packages'
+    'submenu': [
+      'label': 'atom-pastebin'
+      'submenu': [
+        {
+          'label': 'Upload File'
+          'command': 'atom-pastebin:upload'
+        }
+      ]
+    ]
+  }
+]
