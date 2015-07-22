@@ -7,9 +7,6 @@
   "keywords": [
     "pastebin"
   ],
-  "activationCommands": {
-    "atom-workspace": "atom-pastebin:toggle"
-  },
   "repository": "https://github.com/rhinoceraptor/atom-pastebin",
   "license": "MIT",
   "engines": {

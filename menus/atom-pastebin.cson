@@ -2,9 +2,14 @@
 'context-menu':
   'atom-text-editor': [
     {
-      'label': 'Upload file to Pastebin'
-      'command': 'atom-pastebin:upload'
+      'label': 'Upload to Pastebin - public'
+      'command': 'atom-pastebin:upload_public'
+    },
+    {
+      'label': 'Upload to Pastebin - private'
+      'command': 'atom-pastebin:upload_private'
     }
+
   ]
 'menu': [
   {
@@ -13,8 +18,12 @@
       'label': 'atom-pastebin'
       'submenu': [
         {
-          'label': 'Upload File'
-          'command': 'atom-pastebin:upload'
+          'label': 'Upload to Pastebin - public'
+          'command': 'atom-pastebin:upload_public'
+        },
+        {
+          'label': 'Upload to Pastebin - private'
+          'command': 'atom-pastebin:upload_private'
         }
       ]
     ]
