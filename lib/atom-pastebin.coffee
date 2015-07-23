@@ -1,5 +1,5 @@
 {CompositeDisposable} = require 'atom'
-child = require 'child_process'
+shell = require 'shell'
 http = require 'http'
 https = require 'https'
 settings = require './settings'
