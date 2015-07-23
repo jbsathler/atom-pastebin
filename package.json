@@ -2,7 +2,7 @@
   "name": "atom-pastebin",
   "author": "Jack Lewis <rhinoceraptor@gmail.com>",
   "main": "./lib/atom-pastebin",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Instantly upload a source file to your Pastebin account",
   "keywords": [
     "pastebin"
