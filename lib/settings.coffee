@@ -13,6 +13,11 @@ module.exports =
       default: ""
       description: "Your Pastebin developer key: Log in to Pastebin and \
       go to http://pastebin.com/api"
+    api_user_key:
+      type: "string"
+      default: ""
+      description: "Your Pastebin api user key: go to https://pastebin.com/api/api_user_key.html \
+      to generate yours. (upload as guest user if leave blank)"
     expire_len:
       type: "string"
       default: "10M"

@@ -65,7 +65,8 @@ module.exports = AtomPastebin =
       "&api_paste_private=#{encodeURIComponent vis}" +
       "&api_paste_expire_date=#{encodeURIComponent config.expire_len}" +
       "&api_paste_name=#{encodeURIComponent data.title}" +
-      "&api_paste_code=#{encodeURIComponent data.text}"
+      "&api_paste_code=#{encodeURIComponent data.text}" +
+      "&api_user_key=#{encodeURIComponent config.api_user_key}"
 
   api_request: (config, query) ->
     options =
