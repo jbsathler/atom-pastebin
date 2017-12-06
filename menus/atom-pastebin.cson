@@ -6,6 +6,10 @@
       'command': 'atom-pastebin:upload_public'
     },
     {
+      'label': 'Upload to Pastebin - unlisted'
+      'command': 'atom-pastebin:upload_unlisted'
+    },
+    {
       'label': 'Upload to Pastebin - private'
       'command': 'atom-pastebin:upload_private'
     }
@@ -20,6 +24,10 @@
         {
           'label': 'Upload to Pastebin - public'
           'command': 'atom-pastebin:upload_public'
+        },
+        {
+          'label': 'Upload to Pastebin - unlisted'
+          'command': 'atom-pastebin:upload_unlisted'
         },
         {
           'label': 'Upload to Pastebin - private'

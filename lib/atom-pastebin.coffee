@@ -12,6 +12,7 @@ module.exports = AtomPastebin =
 
     @subscriptions.add atom.commands.add 'atom-workspace',
       'atom-pastebin:upload_public': () => @upload_public()
+      'atom-pastebin:upload_unlisted': () => @upload_unlisted()
       'atom-pastebin:upload_private': () => @upload_private()
 
     @transport = @get_transport()
@@ -49,6 +50,12 @@ module.exports = AtomPastebin =
     query = @build_query(config, data, "public")
     @api_request(config, query)
 
+  upload_unlisted: ->
+    config = @get_config()
+    data = @get_editor_data()
+    query = @build_query(config, data, "unlisted")
+    @api_request(config, query)
+
   upload_private: ->
     config = @get_config()
     data = @get_editor_data()
@@ -58,6 +65,7 @@ module.exports = AtomPastebin =
   # Build the Pastebin API query string
   build_query: (config, data, visibility) ->
     if visibility is "public" then vis = 0
+    else if visibility is "unlisted" then vis = 1
     else if visibility is "private" then vis = 2
 
     query = "api_option=paste" +
